@@ -888,7 +888,7 @@ class ThreadPool {
   }
 }
 
-class Piscina extends EventEmitterAsyncResource {
+export class Piscina extends EventEmitterAsyncResource {
   #pool : ThreadPool;
 
   constructor (options : Options = {}) {
@@ -1131,5 +1131,3 @@ class Piscina extends EventEmitterAsyncResource {
 
   static get queueOptionsSymbol () { return kQueueOptions; }
 }
-
-export = Piscina;
